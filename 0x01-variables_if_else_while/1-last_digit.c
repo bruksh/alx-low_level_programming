@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - Task 1 print the last digit of the numberstoredin the variable n
+ * main - Task 1 print the last digit of the numberstored in the variable n
  *
  * Return: Always 0
  **/
@@ -11,24 +11,21 @@
 int main(void)
 {
 int n;
-
+int lastn;
 srand(time(0));
 n = rand() - RAND_MIX / 2;
-printf("Last digit of %d is", n);
+lastn = n % 10
 if (n > 5)
 {
-printf("greater than 5");
+printf("Last digit of %d is %d is greater than 5\n", n, lastn);
 }
-if (n == 0)
+else if (lastn == 0)
 {
-printf("0");
+printf("Last digit of %d is %d and 0\n", n, lastn);
 }
-if (n < 6 && != 0
+else
 {
-printf("less than 6 and not 0");
+printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastn);
 }
-
-printf("\n");
-
 return (0);
 }
