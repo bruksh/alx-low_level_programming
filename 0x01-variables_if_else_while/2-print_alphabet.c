@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 /**
@@ -8,14 +7,12 @@
  */
 int main(void)
 {
-char d = 'a';
-
-while (d <= 'z')
+int ch;
+for (ch = 97; ch <= 122; ch++)
 {
-putchar(d);
-d++;
+putchar(ch);
 }
-putchar('\n')
+putchar(10);
 
 return (0);
 }
