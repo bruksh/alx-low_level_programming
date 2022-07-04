@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 /**
@@ -9,13 +8,11 @@
  */
 int main(void)
 {
-char d = '0'
-
-while (d <= '9')
+int n;
+for (n = 0; n < 10; n++)
 {
-putchar(d);
-d++;
+printf("%\n", n)
 }
-putchar('\n');
+
 return (0);
 }
